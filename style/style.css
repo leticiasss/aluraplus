@@ -5,6 +5,7 @@
     --botaoAzul: #167BF7;
     --background: #00030C;
     --font:'Inter', sans-serif;
+    --botao-azul-efeito: #5ea6ff;
 }
 /*Geral*/
 *{
@@ -43,9 +44,19 @@ body{
     border-radius: .5em;
     padding: 1em;
     text-decoration: none;
-    text-transform: uppercase;
     display: block;
     margin-bottom: 1em;
+}
+.container-botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--background);
+    transition: background 1.5s;
+}
+.botao-secundario:hover{
+    background-color: var(--cinzaSecundario);
+    color: var(--background);
+    border: var(--cinzaSecundario);
+    transition: background 1.5s;
 }
 .botao-secundario{
     background-color: transparent;
@@ -66,4 +77,68 @@ body{
 .secundario{
     align-items: center;
     margin: 0 18em;
+}
+.descricao-titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--brancoPrincipal);
+    margin-bottom: .1em;
+}
+.descricao-texto{
+    color: var(--cinzaSecundario);
+}
+.container-descricao{
+    padding: 2em;
+}
+.btn-assine{
+    display: inline-block;
+    margin-top: 1em;
+}
+/*Dispositivos*/
+.dispositivos{
+    text-align: center;
+}
+.dispositivos-titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--brancoPrincipal);
+}
+.dispositivos-lista{
+    display: flex;
+    justify-content: center;
+    list-style: none; 
+    margin: 5em 0;
+    
+}
+.lista-item{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--brancoPrincipal);
+}
+/*Rodapé*/
+.foo{
+    text-align: center;
+    margin: 5em 3em;
+}
+.foo_lista{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.foo_lista_link a{
+    text-decoration: none;
+    color: var(--brancoPrincipal);
+    margin-left: 1em;
+}
+.foo_lista_link a:hover{
+    color: var(--botaoAzul);
+}
+.foo_lista_link a:active{
+    color: #800080;
+}
+.foo_texto{
+    margin: 1em 0;
+    color: var(--cinzaSecundario);
+    font-size: 14px;
 }
